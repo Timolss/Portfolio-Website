@@ -35,7 +35,7 @@ const ContactPage = () => {
       </div>
       <div className="contact-container">
         <div className="contact-form">
-          <h2>Get in Touch</h2>
+          <h2>Connect with me</h2>
           <form name="contact" method="POST">
             <input type="text" name="name" placeholder="Your Name" required />
             <input
