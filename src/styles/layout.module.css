@@ -75,7 +75,7 @@ body {
 }
 
 .footer {
-  background-color: #33333300;
+  background-color: #12171a;
   color: rgb(158, 156, 156);
   text-align: center;
   padding: 20px;
@@ -86,14 +86,4 @@ body {
 .footer p {
   margin: 0;
   font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-  .navigation-list {
-    flex-direction: column;
-    text-align: center;
-  }
-  .navigation-list li {
-    margin: 5px 0;
-  }
 }

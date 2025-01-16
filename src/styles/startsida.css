@@ -106,13 +106,51 @@ body {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    max-width: 300px;
+  }
+
   .hero-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .image-container .gatsby-image-wrapper {
     max-width: 100%;
     margin-top: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    margin: 0px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #f74816;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 33px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    width: 200px;
+    margin-top: 25px;
+    margin-right: 0px;
+    background-color: #007bff00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #f74816;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
   }
 }
