@@ -18,6 +18,12 @@ const IndexPage = () => {
           gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
           title
         }
+        verktygsIkoner {
+          title
+          file {
+            url
+          }
+        }
       }
     }
   `);
@@ -26,6 +32,7 @@ const IndexPage = () => {
     data.contentfulStartsida.presentationstext.presentationstext;
   const title = data.contentfulStartsida.title;
   const image = getImage(data.contentfulStartsida.bild);
+  const verktygsIkoner = data.contentfulStartsida.verktygsIkoner;
 
   return (
     <Layout>
@@ -67,6 +74,28 @@ const IndexPage = () => {
           )}
         </div>
       </header>
+
+      {verktygsIkoner && verktygsIkoner.length > 0 && (
+        <motion.section
+          className="technologies"
+          initial={{ y: "100%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <h3>Technologies I'm working with</h3>
+          <div className="technologies-container">
+            {verktygsIkoner.map((icon, index) => (
+              <div key={index} className="technology-icon">
+                <img
+                  src={icon.file.url}
+                  alt={icon.title}
+                  className="icon-image"
+                />
+              </div>
+            ))}
+          </div>
+        </motion.section>
+      )}
     </Layout>
   );
 };
