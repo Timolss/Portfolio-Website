@@ -1,0 +1,89 @@
+body {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  color: white;
+  width: 1100px;
+  margin-bottom: 235px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-container {
+  flex: 0 0 auto;
+}
+
+.image-container .gatsby-image-wrapper {
+  max-width: 400px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.425);
+}
+
+.hero h1 {
+  font-size: 62px;
+  margin: 0px;
+  text-align: left;
+}
+
+.hero h2 {
+  text-align: left;
+  font-size: 62px;
+  color: #f74816;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 5px;
+  text-align: left;
+  line-height: 33px;
+}
+
+.hello {
+  font-size: 18px;
+  margin-top: 80px;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  width: 200px;
+  margin-top: 25px;
+  margin-right: 500px;
+  background-color: #007bff00;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 2px solid #f74816;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f74816;
+}
+
+/* Responsiv design för mobila enheter */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image-container .gatsby-image-wrapper {
+    max-width: 100%; /* Bilden fyller tillgänglig bredd */
+    margin-top: 20px;
+  }
+}

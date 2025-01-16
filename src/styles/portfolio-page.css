@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+h1 {
+  color: white;
+  font-family: "Lexend", serif;
+  font-weight: 500;
+  font-size: 42px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.portfolio-item {
+  list-style-type: none;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 17px;
+}
+
+.portfolio-item-image {
+  width: 100%;
+  max-height: auto;
+  border-radius: 12px;
+  box-shadow: 25px 30px 40px 10px rgba(0, 0, 0, 0.725);
+  margin-top: 10px;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item-text {
+  padding: 20px;
+  background-color: #ffffff00;
+  max-height: 120px;
+}
+
+.portfolio-item-text h2 {
+  font-size: 28px;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Lexend", serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.portfolio-item-text p {
+  font-size: 1rem;
+  color: #c0c0c0;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.portfolio-item-image:hover {
+  color: #f74816;
+  transition: 0.92s;
+  transform: scale(1.02);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}

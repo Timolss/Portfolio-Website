@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+.page-not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 83vh;
+  background-color: #12171a;
+  color: white;
+  text-align: center;
+}
+
+.page-not-found img {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
+.page-not-found button {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #f74816;
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: "Lexend", serif;
+  font-weight: 700;
+}
+
+.page-not-found button:hover {
+  background-color: #e04713;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .page-not-found button {
+    padding: 1rem 2rem;
+  }
+}

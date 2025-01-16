@@ -1,0 +1,163 @@
+.welcome-text {
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  padding-top: 15px;
+}
+
+.welcome-text h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-text p {
+  color: white;
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: left;
+  max-width: 400px;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 10px;
+}
+
+.social-links img {
+  transition: transform 0.3s ease;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.contact-form {
+  flex: 2;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  order: 1;
+  max-width: 650px;
+  margin-right: 150px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border: solid 2px #f74816;
+  background-color: #747e7400;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #f74816;
+  transition: 0.12s;
+}
+
+.phone-email {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: solid 1px white;
+  padding-bottom: 40px;
+  margin-top: 90px;
+  text-align: center;
+  width: 370px;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.phone img,
+.email img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.phone p,
+.email a {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.email a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}

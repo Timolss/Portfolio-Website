@@ -1,0 +1,86 @@
+.portfolio-item-container .portfolio-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.portfolio-item-container .portfolio-content {
+  display: flex;
+  gap: 40px;
+  width: 1600px;
+}
+
+.portfolio-item-container .portfolio-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-item-container .portfolio-image {
+  width: 150%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 25px 30px 24px 10px rgba(0, 0, 0, 0.725);
+}
+
+.portfolio-item-container .portfolio-text {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.portfolio-item-container .portfolio-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.portfolio-item-container .portfolio-description {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #c0c0c0;
+}
+
+.portfolio-item-container .back-link {
+  text-decoration: none;
+}
+
+.portfolio-item-container .back-button {
+  background-color: #12171a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: background-color 0.12s ease;
+  border: solid 2px #f74816;
+  font-family: "Lexend", sans-serif;
+  width: 140px;
+}
+
+.portfolio-item-container .back-button:hover {
+  background-color: #f74816;
+}
+
+.portfolio-item-container .tools-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.portfolio-item-container .tool-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item-container .tool-icon:hover {
+  transform: scale(1.1);
+}
