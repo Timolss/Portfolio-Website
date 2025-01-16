@@ -1,6 +1,6 @@
 import React from "react";
 import Seo from "../components/seo";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { motion } from "framer-motion";
@@ -50,9 +50,12 @@ const PortfolioItemTemplate = ({ data }) => {
               <p className="portfolio-description">
                 {beskrivning?.beskrivning || "Ingen beskrivning tillgänglig."}
               </p>
-              <Link to="/portfolio" className="back-link">
-                <button className="back-button">Back</button>
-              </Link>
+              <button
+                className="back-button"
+                onClick={() => window.history.back()}
+              >
+                Back
+              </button>
             </div>
           </div>
         </div>
