@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       </header>
       <main className={mainContent}>{children}</main>
       <footer className={footer}>
-        <p>Copyright © 2025, Timolss. All rights reserved.</p>
+        <p>Copyright © 2025 Timolss. All rights reserved.</p>
       </footer>
     </div>
   );
