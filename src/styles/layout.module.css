@@ -88,7 +88,6 @@ body {
   font-size: 1rem;
 }
 
-/* Responsiv design */
 @media (max-width: 768px) {
   .navigation-list {
     flex-direction: column;

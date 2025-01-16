@@ -37,7 +37,7 @@ const IndexPage = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <p className="hello">Hi, my name is</p>
+            <p className="hello">Hey, I'm</p>
             <h1>{title}</h1>
             <h2>Frontend Developer.</h2>
             <p>

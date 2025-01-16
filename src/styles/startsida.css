@@ -75,7 +75,6 @@ body {
   background-color: #f74816;
 }
 
-/* Responsiv design för mobila enheter */
 @media (max-width: 768px) {
   .hero-container {
     flex-direction: column;
@@ -83,7 +82,7 @@ body {
   }
 
   .image-container .gatsby-image-wrapper {
-    max-width: 100%; /* Bilden fyller tillgänglig bredd */
+    max-width: 100%;
     margin-top: 20px;
   }
 }

@@ -3,7 +3,7 @@ import Layout from "../../components/layout";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import Seo from "../../components/seo";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { motion } from "framer-motion"; // Importera motion
+import { motion } from "framer-motion";
 import "../../styles/portfolio-page.css";
 
 const PortfolioPage = () => {
@@ -28,11 +28,10 @@ const PortfolioPage = () => {
 
   return (
     <Layout>
-      {/* Lägg till motion.main för att animera hela innehållet */}
       <motion.main
-        initial={{ x: 1000, opacity: 0 }} // Startposition: under skärmen och osynlig
-        animate={{ x: 0, opacity: 1 }} // Flyttar upp till sin position och blir synlig
-        transition={{ duration: 0.56 }} // Animationstid
+        initial={{ x: 1000, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.56 }}
       >
         <h1>My projects</h1>
         <ul>
