@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
+/* Grundinställningar */
 body {
   background-color: #12171a;
   margin: 0;
@@ -19,31 +20,39 @@ body {
   background-color: #12171a;
 }
 
+/* Header */
 .header {
   align-items: center;
   font-family: "Lexend", serif;
   font-weight: 300;
   font-style: normal;
   background-color: #12171a;
-  bottom: 847px;
-  box-sizing: border-box;
   display: flex;
-  left: 0px;
+  justify-content: space-between;
+  left: 0;
   min-height: 72px;
-  padding: 0px 95px;
+  padding: 0 20px;
   position: fixed;
-  right: 0px;
-  top: 0px;
-  z-index: 999990;
+  right: 0;
+  top: 0;
+  z-index: 1000;
 }
 
-.navigation {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+.hamburgerButton {
+  display: none;
 }
 
-.navigation-list {
+/* Dölj hamburger-knappen på större skärmar */
+@media (min-width: 769px) {
+  .navigationList {
+    display: flex;
+    justify-content: center; /* Centrerar länkarna på stor skärm */
+    width: 100%;
+  }
+}
+
+/* Desktopnavigering */
+.navigationList {
   display: flex;
   justify-content: center;
   padding: 0;
@@ -51,27 +60,29 @@ body {
   list-style: none;
 }
 
-.navigation-list li {
+.navigationList li {
   margin: 0 40px;
 }
 
-.navigation-list a {
+.navigationList a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-.navigation-list a:hover {
+.navigationList a:hover {
   color: #f74816;
   transition: 0.12s;
 }
 
-.main-content {
+/* Main Content */
+.mainContent {
   padding: 40px 20px;
   flex-grow: 1;
   text-align: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  margin-top: -20px;
 }
 
 .footer {
@@ -89,13 +100,60 @@ body {
 }
 
 @media (max-width: 768px) {
-  .header {
+  .hamburgerButton {
+    display: block;
+  }
+
+  .navigationList {
     display: none;
   }
 
-  .navigation {
+  .mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #1e2428;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%);
+  }
+
+  .mobileMenuOverlay {
+    transform: translateX(0);
+  }
+
+  .hideMenu {
+    transform: translateX(-100%);
+  }
+
+  .mobileMenu nav {
+    margin-top: 100px;
+    padding: 20px;
+  }
+
+  .navigationListMobile {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navigationListMobile li {
+    margin-bottom: 20px;
+  }
+
+  .navigationListMobile a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 0;
     width: 100%;
+    text-align: left;
   }
 }
