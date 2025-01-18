@@ -84,3 +84,54 @@
 .portfolio-item-container .tool-icon:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  .portfolio-item-container .portfolio-item {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    margin-top: 45px;
+  }
+
+  .portfolio-item-container {
+    padding: 10px;
+  }
+
+  .portfolio-item-container .portfolio-content {
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+  }
+
+  .portfolio-item-container .portfolio-image {
+    max-width: 320px;
+  }
+
+  .portfolio-item-container .portfolio-title {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+
+  .portfolio-item-container .portfolio-description {
+    font-size: 16px;
+    text-align: left;
+    max-width: 300px;
+  }
+
+  .portfolio-item-container .back-button {
+    width: 100%;
+    max-width: 160px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .portfolio-item-container .tools-icons {
+    justify-content: start;
+  }
+
+  .portfolio-item-container .tool-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
