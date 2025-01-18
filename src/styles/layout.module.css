@@ -40,14 +40,19 @@ body {
 
 .hamburgerButton {
   display: none;
+  z-index: 1000;
 }
 
 /* Dölj hamburger-knappen på större skärmar */
 @media (min-width: 769px) {
   .navigationList {
     display: flex;
-    justify-content: center; /* Centrerar länkarna på stor skärm */
+    justify-content: center;
     width: 100%;
+  }
+
+  .navigationListMobile {
+    display: none;
   }
 }
 
@@ -82,7 +87,7 @@ body {
   text-align: center;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin-top: -20px;
+  margin-top: 0px;
 }
 
 .footer {
@@ -131,7 +136,7 @@ body {
   }
 
   .mobileMenu nav {
-    margin-top: 100px;
+    margin-top: 85px;
     padding: 20px;
   }
 
@@ -145,7 +150,7 @@ body {
   }
 
   .navigationListMobile li {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .navigationListMobile a {

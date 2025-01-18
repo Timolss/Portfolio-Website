@@ -51,40 +51,40 @@ const Layout = ({ children }) => {
             <Link to="/contact-page">Contact</Link>
           </li>
         </ul>
+        <div
+          className={`${mobileMenu} ${isOpen ? mobileMenuOverlay : hideMenu}`}
+          style={{
+            transform: isOpen ? "translateX(0)" : "translateX(-100%)", // Dynamiskt öppna/stänga menyn
+          }}
+        >
+          <nav>
+            <ul className={navigationListMobile}>
+              <li>
+                <Link to="/" onClick={toggleMenu}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/portfolio" onClick={toggleMenu}>
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/about-me" onClick={toggleMenu}>
+                  About me
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact-page" onClick={toggleMenu}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       {/* Mobilmeny */}
-      <div
-        className={`${mobileMenu} ${isOpen ? mobileMenuOverlay : hideMenu}`}
-        style={{
-          transform: isOpen ? "translateX(0)" : "translateX(-100%)", // Dynamiskt öppna/stänga menyn
-        }}
-      >
-        <nav>
-          <ul className={navigationListMobile}>
-            <li>
-              <Link to="/" onClick={toggleMenu}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/portfolio" onClick={toggleMenu}>
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link to="/about-me" onClick={toggleMenu}>
-                About me
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact-page" onClick={toggleMenu}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
 
       {/* Main Content */}
       <main className={mainContent}>{children}</main>

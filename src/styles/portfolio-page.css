@@ -75,6 +75,11 @@ ul {
 }
 
 @media (max-width: 768px) {
+  h1 {
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+
   .portfolio-item {
     list-style-type: none;
     margin-bottom: 0px;
