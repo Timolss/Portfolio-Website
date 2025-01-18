@@ -73,3 +73,44 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+
+@media (max-width: 768px) {
+  .portfolio-item {
+    list-style-type: none;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 150px;
+  }
+
+  .portfolio-item-text {
+    background-color: #ffffff00;
+    padding-bottom: 0px;
+  }
+
+  .portfolio-item-image {
+    width: 100%;
+    max-height: auto;
+    border-radius: 12px;
+    box-shadow: 25px 30px 40px 10px rgba(0, 0, 0, 0.725);
+    margin-top: 0px;
+    transition: transform 0.4s ease;
+  }
+
+  .portfolio-item {
+    list-style-type: none;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: px;
+    transition: transform 0.3s ease;
+  }
+}
