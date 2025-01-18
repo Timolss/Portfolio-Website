@@ -38,3 +38,34 @@
   color: #c0c0c0;
   max-width: 600px;
 }
+
+@media (max-width: 768px) {
+  .about-me-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+
+  .about-me-image {
+    display: none;
+  }
+
+  .about-me-content {
+    text-align: left;
+    margin-left: 0px;
+  }
+
+  .about-me-content h1 {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  .about-me-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #c0c0c0;
+    max-width: 600px;
+  }
+}
