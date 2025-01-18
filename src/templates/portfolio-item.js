@@ -71,7 +71,12 @@ export const query = graphql`
     contentfulProjekt(slug: { eq: $slug }) {
       titel
       bild {
-        gatsbyImageData(layout: CONSTRAINED, width: 800, placeholder: BLURRED)
+        gatsbyImageData(
+          layout: CONSTRAINED
+          placeholder: BLURRED
+          formats: [AUTO, WEBP]
+          quality: 80
+        )
       }
       beskrivning {
         beskrivning

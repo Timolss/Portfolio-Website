@@ -17,7 +17,12 @@ const PortfolioPage = () => {
             beskrivning
           }
           bild {
-            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            gatsbyImageData(
+              layout: CONSTRAINED
+              placeholder: BLURRED
+              formats: [AUTO, WEBP]
+              quality: 80
+            )
           }
         }
       }

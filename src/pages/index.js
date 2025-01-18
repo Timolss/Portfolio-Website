@@ -15,7 +15,12 @@ const IndexPage = () => {
         }
         title
         bild {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          gatsbyImageData(
+            layout: CONSTRAINED
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+            quality: 80
+          )
           title
         }
         verktygsIkoner {
